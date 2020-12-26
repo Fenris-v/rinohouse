@@ -2,3 +2,86 @@
 @import "prefixes"
 
 @media only screen and (max-width: 1200px)
+  .price__items
+    flex-direction: column
+
+  .s_steps .wrapper_fullHd
+    background: none
+
+  .steps
+    max-width: 100%
+
+  .feedback__slider
+    max-width: 75%
+
+@media only screen and (max-width: 1000px)
+  .pattern
+    &::after, &::before
+      content: none !important
+
+  .header
+    flex-direction: column
+
+  .header, .footer
+    .logo, .socials
+      margin-bottom: 10px
+
+    .contacts
+      margin-bottom: 7px
+
+  .s_firstScreen .wrapper_fullHd
+    margin-top: -266px
+
+  .firstScreen
+    padding-top: 250px
+
+  .firstScreen__items
+    flex-wrap: wrap
+
+    &__item
+      margin-bottom: 40px
+
+  .suite__tabs
+    flex-direction: column
+
+  .suite__tabs li:not(:last-child)
+    margin-bottom: 5px
+    margin-right: 0
+
+  .suite__pack
+    flex-wrap: wrap
+
+  .suite__pack__item
+    width: 100%
+
+    &:first-child
+      margin-bottom: 30px
+
+  .example .gallery__item
+    width: 33.333333%
+
+  .footer
+    flex-direction: column
+
+@media only screen and (max-width: 767px)
+  .firstScreen h1
+    font-size: 30px
+
+  .innerTitle
+    font-size: 25px
+
+  .feedback__slider
+    width: 100%
+
+  .map__address
+    display: none
+
+  .footer_bottom
+    flex-direction: column
+
+@media only screen and (max-width: 640px)
+  .why__items__item
+    width: 48%
+
+  .example .gallery__item
+    width: 50%

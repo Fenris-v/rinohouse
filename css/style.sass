@@ -14,6 +14,7 @@ body
   padding: 0 30px
   @include box-sizing()
   margin: 0 auto
+  width: 100%
 
   &_fullHd
     max-width: 1920px
@@ -532,8 +533,6 @@ header
         left: 50%
         @include transform(translate(-50%, -50%))
 
-.s_example
-
 .example
   text-align: center
 
@@ -760,11 +759,10 @@ header
       a
         text-decoration: none
         @include font($textBlack, $regular, normal, 28px, 1.3)
+        white-space: nowrap
 
   .btn
     @include transform(translateY(-50%))
-
-.s_map
 
 .map
   position: relative
@@ -806,7 +804,7 @@ header
     background: url("../images/form-bg.jpeg") center center no-repeat
 
     .footerPattern
-      height: 32px
+      height: 31px
       width: 100%
       background: url("../images/RINO-HOUSE.png") center center
 
@@ -858,8 +856,8 @@ footer
         @include font($white, $medium, 500, 40px)
         margin-bottom: 10px
 
-        span
-          @include font($grey, $regular, normal, 40px)
+      &_bottom
+        color: $white
 
   &_bottom
     @include font($white, $regular, normal, 14px)

@@ -39,7 +39,13 @@ $(document).ready(() => {
         asNavFor: '.suiteSlider__nav',
         dots: true,
         nextArrow: '<a href="#" class="slick-arrow slick-next"><img src="images/arrow.png" alt="arrow"></a>',
-        prevArrow: '<a href="#" class="slick-arrow slick-prev"><img src="images/arrow.png" alt="arrow"></a>'
+        prevArrow: '<a href="#" class="slick-arrow slick-prev"><img src="images/arrow.png" alt="arrow"></a>',
+        responsive: [{
+            breakpoint: 767,
+            settings: {
+                arrows: false
+            }
+        }]
     });
 
     /**
