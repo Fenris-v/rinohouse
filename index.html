@@ -9,6 +9,7 @@
     <meta content="telephone=no" name="format-detection">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
 
+    <link href="css/jquery.fancybox.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
     <link href="#" rel="shortcut icon">
@@ -38,26 +39,37 @@
                 <ul>
                     <li>
                         <a href="#">
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="svg_hover face" d="M48 24C48 10.7438 37.2562 0 24 0C10.7438 0 0 10.7438 0 24C0 35.9813 8.775 45.9094 20.25 47.7094V30.9375H14.1562V24H20.25V18.7125C20.25 12.6984 23.8313 9.375 29.3156 9.375C31.9406 9.375 34.6875 9.84375 34.6875 9.84375V15.75H31.6594C28.6781 15.75 27.75 17.6016 27.75 19.5V24H34.4062L33.3422 30.9375H27.75V47.7094C39.225 45.9094 48 35.9813 48 24Z"/>
-                                <path d="M33.3422 30.9375L34.4062 24H27.75V19.5C27.75 17.6016 28.6781 15.75 31.6594 15.75H34.6875V9.84375C34.6875 9.84375 31.9406 9.375 29.3156 9.375C23.8313 9.375 20.25 12.6984 20.25 18.7125V24H14.1562V30.9375H20.25V47.7094C21.4734 47.9016 22.725 48 24 48C25.275 48 26.5266 47.9016 27.75 47.7094V30.9375H33.3422Z" fill="white"/>
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path class="svg_hover face"
+                                      d="M48 24C48 10.7438 37.2562 0 24 0C10.7438 0 0 10.7438 0 24C0 35.9813 8.775 45.9094 20.25 47.7094V30.9375H14.1562V24H20.25V18.7125C20.25 12.6984 23.8313 9.375 29.3156 9.375C31.9406 9.375 34.6875 9.84375 34.6875 9.84375V15.75H31.6594C28.6781 15.75 27.75 17.6016 27.75 19.5V24H34.4062L33.3422 30.9375H27.75V47.7094C39.225 45.9094 48 35.9813 48 24Z"/>
+                                <path d="M33.3422 30.9375L34.4062 24H27.75V19.5C27.75 17.6016 28.6781 15.75 31.6594 15.75H34.6875V9.84375C34.6875 9.84375 31.9406 9.375 29.3156 9.375C23.8313 9.375 20.25 12.6984 20.25 18.7125V24H14.1562V30.9375H20.25V47.7094C21.4734 47.9016 22.725 48 24 48C25.275 48 26.5266 47.9016 27.75 47.7094V30.9375H33.3422Z"
+                                      fill="white"/>
                             </svg>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="svg_hover vk" d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50Z"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.0557 35.9648H26.0179C26.0179 35.9648 26.6106 35.8997 26.9132 35.5735C27.1917 35.274 27.1828 34.7116 27.1828 34.7116C27.1828 34.7116 27.1445 32.0787 28.3664 31.691C29.571 31.3091 31.1179 34.2357 32.7574 35.3609C33.9972 36.2126 34.9393 36.0258 34.9393 36.0258L39.3232 35.9648C39.3232 35.9648 41.6165 35.8235 40.5291 34.0204C40.44 33.8729 39.8958 32.6866 37.2696 30.2489C34.5208 27.6975 34.889 28.1102 38.2001 23.697C40.2167 21.0093 41.0229 19.3684 40.7711 18.6656C40.5309 17.9962 39.0477 18.1731 39.0477 18.1731L34.1117 18.2039C34.1117 18.2039 33.7459 18.154 33.4745 18.3162C33.2093 18.4753 33.0386 18.8461 33.0386 18.8461C33.0386 18.8461 32.2574 20.9259 31.2155 22.6947C29.0175 26.427 28.1387 26.624 27.7795 26.3922C26.9439 25.8521 27.1525 24.2224 27.1525 23.0646C27.1525 19.4477 27.7011 17.9396 26.0843 17.5492C25.5477 17.4196 25.1529 17.334 23.7807 17.3202C22.0195 17.3019 20.5288 17.3255 19.6848 17.7391C19.1232 18.014 18.6901 18.6268 18.9539 18.662C19.2801 18.7057 20.019 18.8612 20.4107 19.3947C20.9165 20.0827 20.8987 21.6283 20.8987 21.6283C20.8987 21.6283 21.1893 25.886 20.22 26.415C19.5546 26.7777 18.6419 26.0371 16.6824 22.651C15.6784 20.9166 14.9203 18.9994 14.9203 18.9994C14.9203 18.9994 14.7742 18.6411 14.5134 18.4494C14.197 18.2173 13.755 18.1433 13.755 18.1433L9.0645 18.174C9.0645 18.174 8.36038 18.1936 8.1019 18.4998C7.87195 18.7721 8.08363 19.3354 8.08363 19.3354C8.08363 19.3354 11.7558 27.9266 15.9137 32.2561C19.7262 36.2255 24.0557 35.9648 24.0557 35.9648Z" fill="white"/>
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path class="svg_hover vk"
+                                      d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50Z"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M24.0557 35.9648H26.0179C26.0179 35.9648 26.6106 35.8997 26.9132 35.5735C27.1917 35.274 27.1828 34.7116 27.1828 34.7116C27.1828 34.7116 27.1445 32.0787 28.3664 31.691C29.571 31.3091 31.1179 34.2357 32.7574 35.3609C33.9972 36.2126 34.9393 36.0258 34.9393 36.0258L39.3232 35.9648C39.3232 35.9648 41.6165 35.8235 40.5291 34.0204C40.44 33.8729 39.8958 32.6866 37.2696 30.2489C34.5208 27.6975 34.889 28.1102 38.2001 23.697C40.2167 21.0093 41.0229 19.3684 40.7711 18.6656C40.5309 17.9962 39.0477 18.1731 39.0477 18.1731L34.1117 18.2039C34.1117 18.2039 33.7459 18.154 33.4745 18.3162C33.2093 18.4753 33.0386 18.8461 33.0386 18.8461C33.0386 18.8461 32.2574 20.9259 31.2155 22.6947C29.0175 26.427 28.1387 26.624 27.7795 26.3922C26.9439 25.8521 27.1525 24.2224 27.1525 23.0646C27.1525 19.4477 27.7011 17.9396 26.0843 17.5492C25.5477 17.4196 25.1529 17.334 23.7807 17.3202C22.0195 17.3019 20.5288 17.3255 19.6848 17.7391C19.1232 18.014 18.6901 18.6268 18.9539 18.662C19.2801 18.7057 20.019 18.8612 20.4107 19.3947C20.9165 20.0827 20.8987 21.6283 20.8987 21.6283C20.8987 21.6283 21.1893 25.886 20.22 26.415C19.5546 26.7777 18.6419 26.0371 16.6824 22.651C15.6784 20.9166 14.9203 18.9994 14.9203 18.9994C14.9203 18.9994 14.7742 18.6411 14.5134 18.4494C14.197 18.2173 13.755 18.1433 13.755 18.1433L9.0645 18.174C9.0645 18.174 8.36038 18.1936 8.1019 18.4998C7.87195 18.7721 8.08363 19.3354 8.08363 19.3354C8.08363 19.3354 11.7558 27.9266 15.9137 32.2561C19.7262 36.2255 24.0557 35.9648 24.0557 35.9648Z"
+                                      fill="white"/>
                             </svg>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path class="svg_hover insta" d="M25 50.353C38.8071 50.353 50 39.1601 50 25.353C50 11.5459 38.8071 0.353027 25 0.353027C11.1929 0.353027 0 11.5459 0 25.353C0 39.1601 11.1929 50.353 25 50.353Z" />
-                                <path d="M30.7843 11.0393H19.2157C14.518 11.0393 10.6863 14.8628 10.6863 19.5687V31.1374C10.6863 35.8351 14.5098 39.6668 19.2157 39.6668H30.7843C35.482 39.6668 39.3137 35.8432 39.3137 31.1374V19.5687C39.3137 14.871 35.482 11.0393 30.7843 11.0393ZM36.4298 31.1374C36.4298 34.2583 33.9052 36.7828 30.7843 36.7828H19.2157C16.0948 36.7828 13.5703 34.2583 13.5703 31.1374V19.5687C13.5703 16.4478 16.0948 13.9233 19.2157 13.9233H30.7843C33.9052 13.9233 36.4298 16.4478 36.4298 19.5687V31.1374Z" fill="white"/>
-                                <path d="M25 17.9509C20.9151 17.9509 17.5981 21.2679 17.5981 25.3529C17.5981 29.4379 20.9151 32.7549 25 32.7549C29.085 32.7549 32.402 29.4379 32.402 25.3529C32.402 21.2679 29.085 17.9509 25 17.9509ZM25 29.879C22.5 29.879 20.4739 27.8529 20.4739 25.3529C20.4739 22.8529 22.5 20.8267 25 20.8267C27.5 20.8267 29.5262 22.8529 29.5262 25.3529C29.5262 27.8529 27.5 29.879 25 29.879Z" fill="white"/>
+                            <svg width="50" height="51" viewBox="0 0 50 51" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path class="svg_hover insta"
+                                      d="M25 50.353C38.8071 50.353 50 39.1601 50 25.353C50 11.5459 38.8071 0.353027 25 0.353027C11.1929 0.353027 0 11.5459 0 25.353C0 39.1601 11.1929 50.353 25 50.353Z"/>
+                                <path d="M30.7843 11.0393H19.2157C14.518 11.0393 10.6863 14.8628 10.6863 19.5687V31.1374C10.6863 35.8351 14.5098 39.6668 19.2157 39.6668H30.7843C35.482 39.6668 39.3137 35.8432 39.3137 31.1374V19.5687C39.3137 14.871 35.482 11.0393 30.7843 11.0393ZM36.4298 31.1374C36.4298 34.2583 33.9052 36.7828 30.7843 36.7828H19.2157C16.0948 36.7828 13.5703 34.2583 13.5703 31.1374V19.5687C13.5703 16.4478 16.0948 13.9233 19.2157 13.9233H30.7843C33.9052 13.9233 36.4298 16.4478 36.4298 19.5687V31.1374Z"
+                                      fill="white"/>
+                                <path d="M25 17.9509C20.9151 17.9509 17.5981 21.2679 17.5981 25.3529C17.5981 29.4379 20.9151 32.7549 25 32.7549C29.085 32.7549 32.402 29.4379 32.402 25.3529C32.402 21.2679 29.085 17.9509 25 17.9509ZM25 29.879C22.5 29.879 20.4739 27.8529 20.4739 25.3529C20.4739 22.8529 22.5 20.8267 25 20.8267C27.5 20.8267 29.5262 22.8529 29.5262 25.3529C29.5262 27.8529 27.5 29.879 25 29.879Z"
+                                      fill="white"/>
                             </svg>
                         </a>
                     </li>
@@ -128,4 +140,1109 @@
     </div>
 </div>
 
+<section class="s_why">
+    <div class="wrapper">
+        <div class="why">
+            <div class="innerTitle pattern pattern_middle">
+                Почему вам <br> <span class="gold">стоит обратиться</span> <br> в Rino-House?
+            </div>
+
+            <div class="why__items">
+                <div class="why__items__item">
+                    <div class="why__items__item__icon">
+                        <img src="images/chair.png" alt="icon">
+                    </div>
+                    <p>Качественная новая мебель и техника</p>
+                </div>
+
+                <div class="why__items__item">
+                    <div class="why__items__item__icon">
+                        <img src="images/coach.png" alt="icon">
+                    </div>
+                    <p>Качественная новая мебель и техника</p>
+                </div>
+
+                <div class="why__items__item">
+                    <div class="why__items__item__icon">
+                        <img src="images/master.png" alt="icon">
+                    </div>
+                    <p>Качественная новая мебель и техника</p>
+                </div>
+
+                <div class="why__items__item">
+                    <div class="why__items__item__icon">
+                        <img src="images/time.png" alt="icon">
+                    </div>
+                    <p>Качественная новая мебель и техника</p>
+                </div>
+
+                <div class="why__items__item">
+                    <div class="why__items__item__icon">
+                        <img src="images/money.png" alt="icon">
+                    </div>
+                    <p>Качественная новая мебель и техника</p>
+                </div>
+
+                <div class="why__items__item">
+                    <div class="why__items__item__icon">
+                        <img src="images/coins.png" alt="icon">
+                    </div>
+                    <p>Качественная новая мебель и техника</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="s_suite">
+    <div class="wrapper_fullHd">
+        <div class="wrapper">
+            <div class="suite">
+                <div class="innerTitle pattern pattern_top">
+                    Выберите необходимую <br> <span class="gold">комплектацию</span>
+                </div>
+
+                <ul class="suite__tabs">
+                    <li class="suite__tab active">Квартира-студия</li>
+                    <li class="suite__tab">Однокомнатная</li>
+                    <li class="suite__tab">Двухкомнатная</li>
+                </ul>
+
+                <div class="suite__packs">
+                    <div class="suite__packs__container active">
+                        <div class="suite__pack">
+                            <div class="suite__pack__item">
+                                <div class="sliders">
+                                    <div class="suiteSlider__nav">
+                                        <img src="images/1.jpeg" alt="photo">
+                                        <img src="images/2.jpeg" alt="photo">
+                                    </div>
+                                    <div class="suiteSlider">
+                                        <a href="images/1.jpeg" data-fancybox="gallery">
+                                            <img src="images/1.jpeg" alt="photo">
+                                        </a>
+                                        <a href="images/2.jpeg" data-fancybox="gallery">
+                                            <img src="images/2.jpeg" alt="photo">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="suite__pack__item__name">Комфорт</div>
+
+                                <div class="suite__pack__item__properties">
+                                    <div class="suite__pack__item__prop">
+                                        <a href="#" class="suite__pack__item__prop__name">
+                                            Кухня
+                                            <img src="images/close.svg" alt="icon">
+                                        </a>
+                                        <ul class="suite__pack__item__prop__list">
+                                            <li>Шкаф 3 двери</li>
+                                            <li>Мебель для ТВ:</li>
+                                            <li>Подвесные тумбы с открыванием вниз, 2 шт.</li>
+                                            <li>Секция открытая навесная, 1 шт.</li>
+                                            <li>Навесной шкаф закрытыйй, 2 шт</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="suite__pack__item__prop">
+                                        <a href="#" class="suite__pack__item__prop__name">
+                                            Гостинная
+                                            <img src="images/close.svg" alt="icon">
+                                        </a>
+                                        <ul class="suite__pack__item__prop__list">
+                                            <li>Шкаф 3 двери</li>
+                                            <li>Мебель для ТВ:</li>
+                                            <li>Подвесные тумбы с открыванием вниз, 2 шт.</li>
+                                            <li>Секция открытая навесная, 1 шт.</li>
+                                            <li>Навесной шкаф закрытыйй, 2 шт</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="suite__pack__item__prop">
+                                        <a href="#" class="suite__pack__item__prop__name">
+                                            В цену входит:
+                                            <img src="images/close.svg" alt="icon">
+                                        </a>
+                                        <ul class="suite__pack__item__prop__list">
+                                            <li>Шкаф 3 двери</li>
+                                            <li>Мебель для ТВ:</li>
+                                            <li>Подвесные тумбы с открыванием вниз, 2 шт.</li>
+                                            <li>Секция открытая навесная, 1 шт.</li>
+                                            <li>Навесной шкаф закрытыйй, 2 шт</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="suite__pack__item__prop">
+                                        <a href="#" class="suite__pack__item__prop__name">
+                                            Прихожая
+                                            <img src="images/close.svg" alt="icon">
+                                        </a>
+                                        <ul class="suite__pack__item__prop__list">
+                                            <li>Шкаф 3 двери</li>
+                                            <li>Мебель для ТВ:</li>
+                                            <li>Подвесные тумбы с открыванием вниз, 2 шт.</li>
+                                            <li>Секция открытая навесная, 1 шт.</li>
+                                            <li>Навесной шкаф закрытыйй, 2 шт</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="suite__pack__item__offer">
+                                    <a href="#" class="btn btn_gold">Заказать комплект</a>
+
+                                    <div class="prices">
+                                        <div class="prices_new">
+                                            220 000 ₽
+                                        </div>
+                                        <div class="prices_old">
+                                            Старая цена: <span>350 000 ₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="suite__pack__item">
+                                <div class="sliders">
+                                    <div class="suiteSlider__nav">
+                                        <img src="images/1.jpeg" alt="photo">
+                                        <img src="images/2.jpeg" alt="photo">
+                                    </div>
+                                    <div class="suiteSlider" data-fancybox="gallery">
+                                        <a href="images/1.jpeg">
+                                            <img src="images/1.jpeg" alt="photo">
+                                        </a>
+                                        <a href="images/2.jpeg" data-fancybox="gallery">
+                                            <img src="images/2.jpeg" alt="photo">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="suite__pack__item__name">Комфорт</div>
+
+                                <div class="suite__pack__item__properties">
+                                    <div class="suite__pack__item__prop">
+                                        <a href="#" class="suite__pack__item__prop__name">
+                                            Кухня
+                                            <img src="images/close.svg" alt="icon">
+                                        </a>
+                                        <ul class="suite__pack__item__prop__list">
+                                            <li>Шкаф 3 двери</li>
+                                            <li>Мебель для ТВ:</li>
+                                            <li>Подвесные тумбы с открыванием вниз, 2 шт.</li>
+                                            <li>Секция открытая навесная, 1 шт.</li>
+                                            <li>Навесной шкаф закрытыйй, 2 шт</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="suite__pack__item__prop">
+                                        <a href="#" class="suite__pack__item__prop__name">
+                                            Гостинная
+                                            <img src="images/close.svg" alt="icon">
+                                        </a>
+                                        <ul class="suite__pack__item__prop__list">
+                                            <li>Шкаф 3 двери</li>
+                                            <li>Мебель для ТВ:</li>
+                                            <li>Подвесные тумбы с открыванием вниз, 2 шт.</li>
+                                            <li>Секция открытая навесная, 1 шт.</li>
+                                            <li>Навесной шкаф закрытыйй, 2 шт</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="suite__pack__item__prop">
+                                        <a href="#" class="suite__pack__item__prop__name">
+                                            В цену входит:
+                                            <img src="images/close.svg" alt="icon">
+                                        </a>
+                                        <ul class="suite__pack__item__prop__list">
+                                            <li>Шкаф 3 двери</li>
+                                            <li>Мебель для ТВ:</li>
+                                            <li>Подвесные тумбы с открыванием вниз, 2 шт.</li>
+                                            <li>Секция открытая навесная, 1 шт.</li>
+                                            <li>Навесной шкаф закрытыйй, 2 шт</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="suite__pack__item__prop">
+                                        <a href="#" class="suite__pack__item__prop__name">
+                                            Прихожая
+                                            <img src="images/close.svg" alt="icon">
+                                        </a>
+                                        <ul class="suite__pack__item__prop__list">
+                                            <li>Шкаф 3 двери</li>
+                                            <li>Мебель для ТВ:</li>
+                                            <li>Подвесные тумбы с открыванием вниз, 2 шт.</li>
+                                            <li>Секция открытая навесная, 1 шт.</li>
+                                            <li>Навесной шкаф закрытыйй, 2 шт</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="suite__pack__item__offer">
+                                    <a href="#" class="btn btn_gold">Заказать комплект</a>
+
+                                    <div class="prices">
+                                        <div class="prices_new">
+                                            220 000 ₽
+                                        </div>
+                                        <div class="prices_old">
+                                            Старая цена: <span>350 000 ₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="suite__packs__container">
+                        <div class="suite__pack">
+                            <div class="suite__pack__item">
+                                <div class="sliders">
+                                    <div class="suiteSlider__nav">
+                                        <img src="images/1.jpeg" alt="photo">
+                                        <img src="images/2.jpeg" alt="photo">
+                                    </div>
+                                    <div class="suiteSlider">
+                                        <a href="images/1.jpeg" data-fancybox="gallery">
+                                            <img src="images/1.jpeg" alt="photo">
+                                        </a>
+                                        <a href="images/2.jpeg" data-fancybox="gallery">
+                                            <img src="images/2.jpeg" alt="photo">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="suite__pack__item__name">Комфорт</div>
+
+                                <div class="suite__pack__item__properties">
+                                    <div class="suite__pack__item__prop">
+                                        <a href="#" class="suite__pack__item__prop__name">
+                                            Кухня
+                                            <img src="images/close.svg" alt="icon">
+                                        </a>
+                                        <ul class="suite__pack__item__prop__list">
+                                            <li>Шкаф 3 двери</li>
+                                            <li>Мебель для ТВ:</li>
+                                            <li>Подвесные тумбы с открыванием вниз, 2 шт.</li>
+                                            <li>Секция открытая навесная, 1 шт.</li>
+                                            <li>Навесной шкаф закрытыйй, 2 шт</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="suite__pack__item__prop">
+                                        <a href="#" class="suite__pack__item__prop__name">
+                                            Гостинная
+                                            <img src="images/close.svg" alt="icon">
+                                        </a>
+                                        <ul class="suite__pack__item__prop__list">
+                                            <li>Шкаф 3 двери</li>
+                                            <li>Мебель для ТВ:</li>
+                                            <li>Подвесные тумбы с открыванием вниз, 2 шт.</li>
+                                            <li>Секция открытая навесная, 1 шт.</li>
+                                            <li>Навесной шкаф закрытыйй, 2 шт</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="suite__pack__item__prop">
+                                        <a href="#" class="suite__pack__item__prop__name">
+                                            В цену входит:
+                                            <img src="images/close.svg" alt="icon">
+                                        </a>
+                                        <ul class="suite__pack__item__prop__list">
+                                            <li>Шкаф 3 двери</li>
+                                            <li>Мебель для ТВ:</li>
+                                            <li>Подвесные тумбы с открыванием вниз, 2 шт.</li>
+                                            <li>Секция открытая навесная, 1 шт.</li>
+                                            <li>Навесной шкаф закрытыйй, 2 шт</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="suite__pack__item__prop">
+                                        <a href="#" class="suite__pack__item__prop__name">
+                                            Прихожая
+                                            <img src="images/close.svg" alt="icon">
+                                        </a>
+                                        <ul class="suite__pack__item__prop__list">
+                                            <li>Шкаф 3 двери</li>
+                                            <li>Мебель для ТВ:</li>
+                                            <li>Подвесные тумбы с открыванием вниз, 2 шт.</li>
+                                            <li>Секция открытая навесная, 1 шт.</li>
+                                            <li>Навесной шкаф закрытыйй, 2 шт</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="suite__pack__item__offer">
+                                    <a href="#" class="btn btn_gold">Заказать комплект</a>
+
+                                    <div class="prices">
+                                        <div class="prices_new">
+                                            220 000 ₽
+                                        </div>
+                                        <div class="prices_old">
+                                            Старая цена: <span>350 000 ₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="suite__pack__item">
+                                <div class="sliders">
+                                    <div class="suiteSlider__nav">
+                                        <img src="images/1.jpeg" alt="photo">
+                                        <img src="images/2.jpeg" alt="photo">
+                                    </div>
+                                    <div class="suiteSlider">
+                                        <a href="images/1.jpeg" data-fancybox="gallery">
+                                            <img src="images/1.jpeg" alt="photo">
+                                        </a>
+                                        <a href="images/2.jpeg" data-fancybox="gallery">
+                                            <img src="images/2.jpeg" alt="photo">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="suite__pack__item__name">Комфорт</div>
+
+                                <div class="suite__pack__item__properties">
+                                    <div class="suite__pack__item__prop">
+                                        <a href="#" class="suite__pack__item__prop__name">
+                                            Кухня
+                                            <img src="images/close.svg" alt="icon">
+                                        </a>
+                                        <ul class="suite__pack__item__prop__list">
+                                            <li>Шкаф 3 двери</li>
+                                            <li>Мебель для ТВ:</li>
+                                            <li>Подвесные тумбы с открыванием вниз, 2 шт.</li>
+                                            <li>Секция открытая навесная, 1 шт.</li>
+                                            <li>Навесной шкаф закрытыйй, 2 шт</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="suite__pack__item__prop">
+                                        <a href="#" class="suite__pack__item__prop__name">
+                                            Гостинная
+                                            <img src="images/close.svg" alt="icon">
+                                        </a>
+                                        <ul class="suite__pack__item__prop__list">
+                                            <li>Шкаф 3 двери</li>
+                                            <li>Мебель для ТВ:</li>
+                                            <li>Подвесные тумбы с открыванием вниз, 2 шт.</li>
+                                            <li>Секция открытая навесная, 1 шт.</li>
+                                            <li>Навесной шкаф закрытыйй, 2 шт</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="suite__pack__item__prop">
+                                        <a href="#" class="suite__pack__item__prop__name">
+                                            В цену входит:
+                                            <img src="images/close.svg" alt="icon">
+                                        </a>
+                                        <ul class="suite__pack__item__prop__list">
+                                            <li>Шкаф 3 двери</li>
+                                            <li>Мебель для ТВ:</li>
+                                            <li>Подвесные тумбы с открыванием вниз, 2 шт.</li>
+                                            <li>Секция открытая навесная, 1 шт.</li>
+                                            <li>Навесной шкаф закрытыйй, 2 шт</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="suite__pack__item__prop">
+                                        <a href="#" class="suite__pack__item__prop__name">
+                                            Прихожая
+                                            <img src="images/close.svg" alt="icon">
+                                        </a>
+                                        <ul class="suite__pack__item__prop__list">
+                                            <li>Шкаф 3 двери</li>
+                                            <li>Мебель для ТВ:</li>
+                                            <li>Подвесные тумбы с открыванием вниз, 2 шт.</li>
+                                            <li>Секция открытая навесная, 1 шт.</li>
+                                            <li>Навесной шкаф закрытыйй, 2 шт</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="suite__pack__item__offer">
+                                    <a href="#" class="btn btn_gold">Заказать комплект</a>
+
+                                    <div class="prices">
+                                        <div class="prices_new">
+                                            220 000 ₽
+                                        </div>
+                                        <div class="prices_old">
+                                            Старая цена: <span>350 000 ₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="suite__packs__container">
+                        <div class="suite__pack">
+                            <div class="suite__pack__item">
+                                <div class="sliders">
+                                    <div class="suiteSlider__nav">
+                                        <img src="images/1.jpeg" alt="photo">
+                                        <img src="images/2.jpeg" alt="photo">
+                                    </div>
+                                    <div class="suiteSlider">
+                                        <a href="images/1.jpeg" data-fancybox="gallery">
+                                            <img src="images/1.jpeg" alt="photo">
+                                        </a>
+                                        <a href="images/2.jpeg" data-fancybox="gallery">
+                                            <img src="images/2.jpeg" alt="photo">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="suite__pack__item__name">Комфорт</div>
+
+                                <div class="suite__pack__item__properties">
+                                    <div class="suite__pack__item__prop">
+                                        <a href="#" class="suite__pack__item__prop__name">
+                                            Кухня
+                                            <img src="images/close.svg" alt="icon">
+                                        </a>
+                                        <ul class="suite__pack__item__prop__list">
+                                            <li>Шкаф 3 двери</li>
+                                            <li>Мебель для ТВ:</li>
+                                            <li>Подвесные тумбы с открыванием вниз, 2 шт.</li>
+                                            <li>Секция открытая навесная, 1 шт.</li>
+                                            <li>Навесной шкаф закрытыйй, 2 шт</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="suite__pack__item__prop">
+                                        <a href="#" class="suite__pack__item__prop__name">
+                                            Гостинная
+                                            <img src="images/close.svg" alt="icon">
+                                        </a>
+                                        <ul class="suite__pack__item__prop__list">
+                                            <li>Шкаф 3 двери</li>
+                                            <li>Мебель для ТВ:</li>
+                                            <li>Подвесные тумбы с открыванием вниз, 2 шт.</li>
+                                            <li>Секция открытая навесная, 1 шт.</li>
+                                            <li>Навесной шкаф закрытыйй, 2 шт</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="suite__pack__item__prop">
+                                        <a href="#" class="suite__pack__item__prop__name">
+                                            В цену входит:
+                                            <img src="images/close.svg" alt="icon">
+                                        </a>
+                                        <ul class="suite__pack__item__prop__list">
+                                            <li>Шкаф 3 двери</li>
+                                            <li>Мебель для ТВ:</li>
+                                            <li>Подвесные тумбы с открыванием вниз, 2 шт.</li>
+                                            <li>Секция открытая навесная, 1 шт.</li>
+                                            <li>Навесной шкаф закрытыйй, 2 шт</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="suite__pack__item__prop">
+                                        <a href="#" class="suite__pack__item__prop__name">
+                                            Прихожая
+                                            <img src="images/close.svg" alt="icon">
+                                        </a>
+                                        <ul class="suite__pack__item__prop__list">
+                                            <li>Шкаф 3 двери</li>
+                                            <li>Мебель для ТВ:</li>
+                                            <li>Подвесные тумбы с открыванием вниз, 2 шт.</li>
+                                            <li>Секция открытая навесная, 1 шт.</li>
+                                            <li>Навесной шкаф закрытыйй, 2 шт</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="suite__pack__item__offer">
+                                    <a href="#" class="btn btn_gold">Заказать комплект</a>
+
+                                    <div class="prices">
+                                        <div class="prices_new">
+                                            220 000 ₽
+                                        </div>
+                                        <div class="prices_old">
+                                            Старая цена: <span>350 000 ₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="suite__pack__item">
+                                <div class="sliders">
+                                    <div class="suiteSlider__nav">
+                                        <img src="images/1.jpeg" alt="photo">
+                                        <img src="images/2.jpeg" alt="photo">
+                                    </div>
+                                    <div class="suiteSlider">
+                                        <a href="images/1.jpeg" data-fancybox="gallery">
+                                            <img src="images/1.jpeg" alt="photo">
+                                        </a>
+                                        <a href="images/2.jpeg" data-fancybox="gallery">
+                                            <img src="images/2.jpeg" alt="photo">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="suite__pack__item__name">Комфорт</div>
+
+                                <div class="suite__pack__item__properties">
+                                    <div class="suite__pack__item__prop">
+                                        <a href="#" class="suite__pack__item__prop__name">
+                                            Кухня
+                                            <img src="images/close.svg" alt="icon">
+                                        </a>
+                                        <ul class="suite__pack__item__prop__list">
+                                            <li>Шкаф 3 двери</li>
+                                            <li>Мебель для ТВ:</li>
+                                            <li>Подвесные тумбы с открыванием вниз, 2 шт.</li>
+                                            <li>Секция открытая навесная, 1 шт.</li>
+                                            <li>Навесной шкаф закрытыйй, 2 шт</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="suite__pack__item__prop">
+                                        <a href="#" class="suite__pack__item__prop__name">
+                                            Гостинная
+                                            <img src="images/close.svg" alt="icon">
+                                        </a>
+                                        <ul class="suite__pack__item__prop__list">
+                                            <li>Шкаф 3 двери</li>
+                                            <li>Мебель для ТВ:</li>
+                                            <li>Подвесные тумбы с открыванием вниз, 2 шт.</li>
+                                            <li>Секция открытая навесная, 1 шт.</li>
+                                            <li>Навесной шкаф закрытыйй, 2 шт</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="suite__pack__item__prop">
+                                        <a href="#" class="suite__pack__item__prop__name">
+                                            В цену входит:
+                                            <img src="images/close.svg" alt="icon">
+                                        </a>
+                                        <ul class="suite__pack__item__prop__list">
+                                            <li>Шкаф 3 двери</li>
+                                            <li>Мебель для ТВ:</li>
+                                            <li>Подвесные тумбы с открыванием вниз, 2 шт.</li>
+                                            <li>Секция открытая навесная, 1 шт.</li>
+                                            <li>Навесной шкаф закрытыйй, 2 шт</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="suite__pack__item__prop">
+                                        <a href="#" class="suite__pack__item__prop__name">
+                                            Прихожая
+                                            <img src="images/close.svg" alt="icon">
+                                        </a>
+                                        <ul class="suite__pack__item__prop__list">
+                                            <li>Шкаф 3 двери</li>
+                                            <li>Мебель для ТВ:</li>
+                                            <li>Подвесные тумбы с открыванием вниз, 2 шт.</li>
+                                            <li>Секция открытая навесная, 1 шт.</li>
+                                            <li>Навесной шкаф закрытыйй, 2 шт</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="suite__pack__item__offer">
+                                    <a href="#" class="btn btn_gold">Заказать комплект</a>
+
+                                    <div class="prices">
+                                        <div class="prices_new">
+                                            220 000 ₽
+                                        </div>
+                                        <div class="prices_old">
+                                            Старая цена: <span>350 000 ₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="suite__offer">
+                    <img src="images/plan.png" alt="icon">
+                    Разработаем дизайн проекта - <span class="bold">бесплатно!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="s_form">
+    <div class="wrapper_fullHd">
+        <div class="blur"></div>
+        <div class="wrapper">
+            <div class="form">
+                <div class="innerTitle pattern pattern_middle">
+                    Есть <span class="gold">вопросы</span>? <br> Оставьте заявку на <br> консультацию!
+                </div>
+
+                <form action="#" method="post">
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="text" placeholder="Введите ваше имя">
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="tel" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ">
+                            </label>
+                        </li>
+                    </ul>
+
+                    <div class="privacy">
+                        Отправляя заявку, вы принимаете <a href="#">условия обработки персональных</a>
+                    </div>
+
+                    <input type="submit" value="ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ" class="btn btn_gold">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="s_price">
+    <div class="wrapper">
+        <div class="price">
+            <div class="innerTitle pattern pattern_top">
+                Чем обусловлена <span class="gold">доступная <br> цена</span> на мебель?
+            </div>
+
+            <div class="price__items">
+                <div class="price__items__item">
+                    <img src="images/m390.png" alt="icon">
+                    <p>Прямые поставки материала и механизмов от производителей</p>
+                </div>
+                <div class="price__items__item">
+                    <img src="images/02.png" alt="icon">
+                    <p>Собственное автоматизированное производство</p>
+                </div>
+                <div class="price__items__item">
+                    <img src="images/03.png" alt="icon">
+                    <p>Большие масштабы производства мебельных комплектов</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="s_example">
+    <div class="wrapper_fullHd">
+        <div class="example">
+            <div class="innerTitle pattern pattern_top">
+                Оцените примеры наших <br> работ <span class="gold">«под ключ»</span>
+            </div>
+
+            <div class="gallery">
+                <div class="gallery__item">
+                    <img src="images/galery1.jpeg" alt="photo">
+
+                    <div class="gallery__item__desc">
+                        <div class="gallery__item__desc__name">
+                            <span>Комплект</span> <br> «Стандарт»
+                        </div>
+
+                        <hr>
+
+                        <ul>
+                            <li>Дизайн-проект</li>
+                            <li>Изготовление</li>
+                            <li>Доставка на объект</li>
+                            <li>Сборка и монтаж</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="gallery__item">
+                    <img src="images/galery2.jpeg" alt="photo">
+
+                    <div class="gallery__item__desc">
+                        <div class="gallery__item__desc__name">
+                            <span>Комплект</span> <br> «Стандарт»
+                        </div>
+
+                        <hr>
+
+                        <ul>
+                            <li>Дизайн-проект</li>
+                            <li>Изготовление</li>
+                            <li>Доставка на объект</li>
+                            <li>Сборка и монтаж</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="gallery__item">
+                    <img src="images/galery3.jpeg" alt="photo">
+
+                    <div class="gallery__item__desc">
+                        <div class="gallery__item__desc__name">
+                            <span>Комплект</span> <br> «Стандарт»
+                        </div>
+
+                        <hr>
+
+                        <ul>
+                            <li>Дизайн-проект</li>
+                            <li>Изготовление</li>
+                            <li>Доставка на объект</li>
+                            <li>Сборка и монтаж</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="gallery__item">
+                    <img src="images/galery4.jpeg" alt="photo">
+
+                    <div class="gallery__item__desc">
+                        <div class="gallery__item__desc__name">
+                            <span>Комплект</span> <br> «Стандарт»
+                        </div>
+
+                        <hr>
+
+                        <ul>
+                            <li>Дизайн-проект</li>
+                            <li>Изготовление</li>
+                            <li>Доставка на объект</li>
+                            <li>Сборка и монтаж</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="gallery__item">
+                    <img src="images/galery5.jpeg" alt="photo">
+
+                    <div class="gallery__item__desc">
+                        <div class="gallery__item__desc__name">
+                            <span>Комплект</span> <br> «Стандарт»
+                        </div>
+
+                        <hr>
+
+                        <ul>
+                            <li>Дизайн-проект</li>
+                            <li>Изготовление</li>
+                            <li>Доставка на объект</li>
+                            <li>Сборка и монтаж</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="gallery__item">
+                    <img src="images/galery6.jpeg" alt="photo">
+
+                    <div class="gallery__item__desc">
+                        <div class="gallery__item__desc__name">
+                            <span>Комплект</span> <br> «Стандарт»
+                        </div>
+
+                        <hr>
+
+                        <ul>
+                            <li>Дизайн-проект</li>
+                            <li>Изготовление</li>
+                            <li>Доставка на объект</li>
+                            <li>Сборка и монтаж</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="gallery__item">
+                    <img src="images/galery7.jpeg" alt="photo">
+
+                    <div class="gallery__item__desc">
+                        <div class="gallery__item__desc__name">
+                            <span>Комплект</span> <br> «Стандарт»
+                        </div>
+
+                        <hr>
+
+                        <ul>
+                            <li>Дизайн-проект</li>
+                            <li>Изготовление</li>
+                            <li>Доставка на объект</li>
+                            <li>Сборка и монтаж</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="gallery__item gallery__item__offer">
+                    <img src="images/instagram.png" alt="icon">
+                    <p>Посмотрите еще <span class="bold">100+ работ</span> в нашем instagram</p>
+                    <a href="#">@rinohouse</a>
+                </div>
+
+                <div class="gallery__item">
+                    <img src="images/galery8.jpeg" alt="photo">
+
+                    <div class="gallery__item__desc">
+                        <div class="gallery__item__desc__name">
+                            <span>Комплект</span> <br> «Стандарт»
+                        </div>
+
+                        <hr>
+
+                        <ul>
+                            <li>Дизайн-проект</li>
+                            <li>Изготовление</li>
+                            <li>Доставка на объект</li>
+                            <li>Сборка и монтаж</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="gallery__item">
+                    <img src="images/galery1.jpeg" alt="photo">
+
+                    <div class="gallery__item__desc">
+                        <div class="gallery__item__desc__name">
+                            <span>Комплект</span> <br> «Стандарт»
+                        </div>
+
+                        <hr>
+
+                        <ul>
+                            <li>Дизайн-проект</li>
+                            <li>Изготовление</li>
+                            <li>Доставка на объект</li>
+                            <li>Сборка и монтаж</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="s_feedback">
+    <div class="wrapper_fullHd">
+        <div class="wrapper">
+            <div class="feedback">
+                <div class="innerTitle pattern pattern_bottom">
+                    Что скажут <span class="gold">наши <br> довольные</span> клиенты
+                </div>
+
+                <div class="feedback__slider">
+                    <div class="feedback__item">
+                        <img src="images/feedback.jpeg" alt="photo">
+                        <div class="feedback__item__content">
+                            <p>Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро
+                                заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен нести
+                                никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику
+                                в деле.</p>
+                            <div class="feedback__item__content__from">
+                                Софья и Степан Ивановы, г. Санкт-Петербург
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feedback__item">
+                        <img src="images/feedback.jpeg" alt="photo">
+                        <div class="feedback__item__content">
+                            <p>Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро
+                                заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен нести
+                                никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику
+                                в деле.</p>
+                            <div class="feedback__item__content__from">
+                                Софья и Степан Ивановы, г. Санкт-Петербург
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="s_steps">
+    <div class="wrapper_fullHd">
+        <div class="wrapper">
+            <div class="steps">
+                <div class="innerTitle">
+                    <span class="gold">6 простых шагов</span> от <br> заявки до реализации
+                </div>
+
+                <table>
+                    <tr>
+                        <td>
+                            <div class="steps__container">
+                                <div class="steps__icon">
+                                    <img src="images/smartphone.svg" alt="icon">
+                                </div>
+                                <div class="steps__content">
+                                    <div class="steps__number"><span>Шаг №1</span> 1 минута</div>
+                                    <p>Вы <span class="gold">оставляете заявку</span> на сайте или звоните нам:
+                                        <a href="tel:+7 984 546 87 93">+7 984 546 87 93</a></p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="steps__container">
+                                <div class="steps__icon">
+                                    <img src="images/smartphone.svg" alt="icon">
+                                </div>
+                                <div class="steps__content">
+                                    <div class="steps__number"><span>Шаг №1</span> 1 минута</div>
+                                    <p>Вы <span class="gold">оставляете заявку</span> на сайте или звоните нам:
+                                        <a href="tel:+7 984 546 87 93">+7 984 546 87 93</a></p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="steps__container">
+                                <div class="steps__icon">
+                                    <img src="images/smartphone.svg" alt="icon">
+                                </div>
+                                <div class="steps__content">
+                                    <div class="steps__number"><span>Шаг №1</span> 1 минута</div>
+                                    <p>Вы <span class="gold">оставляете заявку</span> на сайте или звоните нам:
+                                        <a href="tel:+7 984 546 87 93">+7 984 546 87 93</a></p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="steps__container">
+                                <div class="steps__icon">
+                                    <img src="images/smartphone.svg" alt="icon">
+                                </div>
+                                <div class="steps__content">
+                                    <div class="steps__number"><span>Шаг №1</span> 1 минута</div>
+                                    <p>Вы <span class="gold">оставляете заявку</span> на сайте или звоните нам:
+                                        <a href="tel:+7 984 546 87 93">+7 984 546 87 93</a></p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <a href="#" class="btn btn_gold">оставить заявку на консультацию</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="s_map">
+    <div class="wrapper_fullHd">
+        <div class="map">
+            <script type="text/javascript" charset="utf-8" async
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A34c4475db1e0f67be2ec30e3f1948dc5c9420d180870515ed7e3332a42da02ca&amp;width=100%25&amp;height=700&amp;lang=ru_RU&amp;scroll=false"></script>
+
+            <div class="map__address">
+                <img src="images/maps.png" alt="icon">
+                <div class="map__address__content">
+                    <p>Ждем вас в гости:</p>
+                    <div class="map__address__content__name">
+                        Санкт -Петербург, ул. Дизайнеров-энтузиастов, 69
+                    </div>
+                    <a href="tel:+7 948 875 12 59">+7 948 875 12 59</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="s_footerPattern">
+    <div class="wrapper_fullHd">
+        <div class="blur"></div>
+        <div class="footerPattern"></div>
+    </div>
+</section>
+
+<footer>
+    <div class="wrapper_fullHd">
+        <div class="wrapper">
+            <div class="footer">
+                <a href="#" class="logo">
+                    <div class="logo__img">
+                        <img src="images/logo.png" alt="logo">
+                    </div>
+                    <div class="logo__name">
+                        <div class="logo__name_top">
+                            Rino-house.ru
+                        </div>
+                        <div class="logo__name_bottom">
+                            Лучшая мебель для вашего дома
+                        </div>
+                    </div>
+                </a>
+
+                <div class="socials">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path class="svg_hover face"
+                                          d="M48 24C48 10.7438 37.2562 0 24 0C10.7438 0 0 10.7438 0 24C0 35.9813 8.775 45.9094 20.25 47.7094V30.9375H14.1562V24H20.25V18.7125C20.25 12.6984 23.8313 9.375 29.3156 9.375C31.9406 9.375 34.6875 9.84375 34.6875 9.84375V15.75H31.6594C28.6781 15.75 27.75 17.6016 27.75 19.5V24H34.4062L33.3422 30.9375H27.75V47.7094C39.225 45.9094 48 35.9813 48 24Z"/>
+                                    <path d="M33.3422 30.9375L34.4062 24H27.75V19.5C27.75 17.6016 28.6781 15.75 31.6594 15.75H34.6875V9.84375C34.6875 9.84375 31.9406 9.375 29.3156 9.375C23.8313 9.375 20.25 12.6984 20.25 18.7125V24H14.1562V30.9375H20.25V47.7094C21.4734 47.9016 22.725 48 24 48C25.275 48 26.5266 47.9016 27.75 47.7094V30.9375H33.3422Z"
+                                          fill="white"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path class="svg_hover vk"
+                                          d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50Z"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M24.0557 35.9648H26.0179C26.0179 35.9648 26.6106 35.8997 26.9132 35.5735C27.1917 35.274 27.1828 34.7116 27.1828 34.7116C27.1828 34.7116 27.1445 32.0787 28.3664 31.691C29.571 31.3091 31.1179 34.2357 32.7574 35.3609C33.9972 36.2126 34.9393 36.0258 34.9393 36.0258L39.3232 35.9648C39.3232 35.9648 41.6165 35.8235 40.5291 34.0204C40.44 33.8729 39.8958 32.6866 37.2696 30.2489C34.5208 27.6975 34.889 28.1102 38.2001 23.697C40.2167 21.0093 41.0229 19.3684 40.7711 18.6656C40.5309 17.9962 39.0477 18.1731 39.0477 18.1731L34.1117 18.2039C34.1117 18.2039 33.7459 18.154 33.4745 18.3162C33.2093 18.4753 33.0386 18.8461 33.0386 18.8461C33.0386 18.8461 32.2574 20.9259 31.2155 22.6947C29.0175 26.427 28.1387 26.624 27.7795 26.3922C26.9439 25.8521 27.1525 24.2224 27.1525 23.0646C27.1525 19.4477 27.7011 17.9396 26.0843 17.5492C25.5477 17.4196 25.1529 17.334 23.7807 17.3202C22.0195 17.3019 20.5288 17.3255 19.6848 17.7391C19.1232 18.014 18.6901 18.6268 18.9539 18.662C19.2801 18.7057 20.019 18.8612 20.4107 19.3947C20.9165 20.0827 20.8987 21.6283 20.8987 21.6283C20.8987 21.6283 21.1893 25.886 20.22 26.415C19.5546 26.7777 18.6419 26.0371 16.6824 22.651C15.6784 20.9166 14.9203 18.9994 14.9203 18.9994C14.9203 18.9994 14.7742 18.6411 14.5134 18.4494C14.197 18.2173 13.755 18.1433 13.755 18.1433L9.0645 18.174C9.0645 18.174 8.36038 18.1936 8.1019 18.4998C7.87195 18.7721 8.08363 19.3354 8.08363 19.3354C8.08363 19.3354 11.7558 27.9266 15.9137 32.2561C19.7262 36.2255 24.0557 35.9648 24.0557 35.9648Z"
+                                          fill="white"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="50" height="51" viewBox="0 0 50 51" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path class="svg_hover insta"
+                                          d="M25 50.353C38.8071 50.353 50 39.1601 50 25.353C50 11.5459 38.8071 0.353027 25 0.353027C11.1929 0.353027 0 11.5459 0 25.353C0 39.1601 11.1929 50.353 25 50.353Z"/>
+                                    <path d="M30.7843 11.0393H19.2157C14.518 11.0393 10.6863 14.8628 10.6863 19.5687V31.1374C10.6863 35.8351 14.5098 39.6668 19.2157 39.6668H30.7843C35.482 39.6668 39.3137 35.8432 39.3137 31.1374V19.5687C39.3137 14.871 35.482 11.0393 30.7843 11.0393ZM36.4298 31.1374C36.4298 34.2583 33.9052 36.7828 30.7843 36.7828H19.2157C16.0948 36.7828 13.5703 34.2583 13.5703 31.1374V19.5687C13.5703 16.4478 16.0948 13.9233 19.2157 13.9233H30.7843C33.9052 13.9233 36.4298 16.4478 36.4298 19.5687V31.1374Z"
+                                          fill="white"/>
+                                    <path d="M25 17.9509C20.9151 17.9509 17.5981 21.2679 17.5981 25.3529C17.5981 29.4379 20.9151 32.7549 25 32.7549C29.085 32.7549 32.402 29.4379 32.402 25.3529C32.402 21.2679 29.085 17.9509 25 17.9509ZM25 29.879C22.5 29.879 20.4739 27.8529 20.4739 25.3529C20.4739 22.8529 22.5 20.8267 25 20.8267C27.5 20.8267 29.5262 22.8529 29.5262 25.3529C29.5262 27.8529 27.5 29.879 25 29.879Z"
+                                          fill="white"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contacts">
+                    <img src="images/icon.png" alt="icon">
+                    <div class="contacts__container">
+                        <a class="contacts__phone" href="tel:+7 948 875 12 59">+7 948 875 12 59</a>
+                        <a class="contacts__callback" href="#">Заказать обратный звонок</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="wrapper">
+            <div class="footer_bottom">
+                <div class="copyright">2015 - 2020 © Rino-House. Все права защищены</div>
+                <a href="#" class="privacy">Политика конфиденциальности</a>
+                <div class="developer">
+                    Разработка сайта - <a href="https://petersburg-studio.com/">petersburg-studio.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/jquery.fancybox.min.js" type="text/javascript"></script>
+<script src="js/slick.min.js" type="text/javascript"></script>
 <script src="js/scripts.js" type="text/javascript"></script>
