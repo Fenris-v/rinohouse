@@ -882,6 +882,51 @@ footer
         @include font($gold, $medium, 500, 15px)
         text-decoration: none
 
+.modal
+  display: none
+  width: 100%
+  background: #fff
+  padding: 30px
+
+.modal--default
+  max-width: 380px
+  text-align: center
+
+.modal--callback
+  max-width: 500px
+  width: 100%
+  padding: 30px
+  background: #fff
+  text-align: center
+
+.modal__title
+  margin: 0 0 35px 0
+  font-size: 30px
+  font-weight: 700
+  text-align: center
+
+.modal__title.left
+  text-align: left
+
+.modal-form__row
+  margin: 0 0 20px 0
+
+  label
+    @include font($textBlack, $regular, normal, 15px)
+
+  input[type='text'], input[type='phone'], input[type='checkbox']
+    @include font($textBlack, $regular, normal, 15px, 40px)
+    padding: 0 15px
+
+    &:focus, &:active
+      outline: none
+
+  input[type='text'], input[type='phone']
+    width: 100%
+
+.modal-form__row:last-child
+  margin: 0
+
 @import "hamburger"
 
 /* RESPONSIVE */

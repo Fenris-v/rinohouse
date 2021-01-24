@@ -83,4 +83,13 @@ $(document).ready(() => {
         $('.suiteSlider .slick-track').css('width', sliderWidth + 'px')
         $('.suite .suiteSlider .slick-slide img').css('width', sliderWidth + 'px');
     });
+
+    /**
+     * FANCYBOX
+     */
+    $('[data-fancybox-modal]').fancybox({
+        trapFocus: true,
+        autoFocus: false,
+        touch: false,
+    });
 });

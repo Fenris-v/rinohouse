@@ -80,7 +80,7 @@
                 <img src="images/icon.png" alt="icon">
                 <div class="contacts__container">
                     <a class="contacts__phone" href="tel:+7 948 875 12 59">+7 948 875 12 59</a>
-                    <a class="contacts__callback" href="#">Заказать обратный звонок</a>
+                    <a class="contacts__callback" href="#callback-modal" data-fancybox-modal>Заказать обратный звонок</a>
                 </div>
             </div>
         </div>
@@ -1224,7 +1224,7 @@
                     <img src="images/icon.png" alt="icon">
                     <div class="contacts__container">
                         <a class="contacts__phone" href="tel:+7 948 875 12 59">+7 948 875 12 59</a>
-                        <a class="contacts__callback" href="#">Заказать обратный звонок</a>
+                        <a class="contacts__callback" href="#callback-modal" data-fancybox-modal>Заказать обратный звонок</a>
                     </div>
                 </div>
             </div>
@@ -1243,6 +1243,34 @@
         </div>
     </div>
 </footer>
+
+<div id="callback-modal" class="modal modal--callback">
+    <div class="modal__title">Заказать обратный звонок</div>
+    <form method="post"
+          action="#"
+          enctype="multipart/form-data"
+          class="modal-form"
+          data-form-ids="popup">
+
+        <div class="modal-form__row">
+            <input type="text" name="name" placeholder="Ваше имя" class="form-input " required="">
+        </div>
+
+        <div class="modal-form__row">
+            <input type="text" name="phone" placeholder="Номер телефона" class="form-input form-input--tel" required="">
+        </div>
+
+        <div class="modal-form__row">
+            <label><input type="checkbox" class="notice_cheked" checked="" name="notice">
+                Отправляя заявку, я соглашаюсь на обработку персональных данных
+            </label>
+        </div>
+
+        <div class="modal-form__row">
+            <input type="submit" class="form-submit btn btn_gold" value="Заказать звонок">
+        </div>
+    </form>
+</div>
 
 <script src="js/jquery.min.js" type="text/javascript"></script>
 <script src="js/jquery.fancybox.min.js" type="text/javascript"></script>
